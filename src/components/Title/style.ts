@@ -7,7 +7,7 @@ type H1Props = {
 };
 
 export const StyledH1 = styled.h1<H1Props>`
-  font-size: ${(props) => props.textSize}px;
+  font-size: ${(props) => props.textSize};
   color: ${(props) => props.textColor};
   font-family:'Poppins';
   @media (max-width: 768px) {
