@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const LeftPainel = styled.div`
     width: 50%;
 
-    background-color: #F9F9F9;
+    background-color: transparent;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ export const RightPainel= styled.div`
     display:flex;
     jusify-content:center;
     align-items: center;
-    background-color: #F9F9F9;
+    background-color: transparent;
 
 `
 export const RightImgArea = styled.div `

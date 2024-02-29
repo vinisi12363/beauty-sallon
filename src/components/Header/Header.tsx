@@ -1,15 +1,51 @@
-import { HeaderStyle, HeaderNav } from "./style";
+import { HeaderStyle, HeaderNav , Option} from "./style";
 import { Logo } from "../Logo/Logo";
+import { useState } from "react";
 
 export const Header = ()=>{
+ const [optionClass , setOptionClass] = useState('');
+   
+      const handleClick = (event: React.MouseEvent<HTMLParagraphElement>) => {
+        const target = event.target as HTMLParagraphElement;
+        
+        if (target.className) {
+            setOptionClass(target.className);
+        }
+        if(target.className.includes('inicio')){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+        }
+        if(target.className.includes('sobre')){
+            window.scrollTo({
+                top: 990,
+                behavior: 'smooth'
+              });
+        }
+        if(target.className.includes('servicos')){
+            window.scrollTo({
+                top: 1990,
+                behavior: 'smooth'
+              });
+        }
+        if(target.className.includes('contato')){
+            window.scrollTo({
+                top: 2990,
+                behavior: 'smooth'
+              });
+        }
+     
+      };
+      console.log('opt', optionClass)
     return (
         <HeaderStyle>
             <Logo></Logo>
             <HeaderNav>
-                <p  className="option selected" style={{color:"#F67797"}}> Início</p>
-                <p className="option"> Serviços</p>
-                <p className="option"> Sobre</p>
-                <p className="option"> Contato</p>
+                <Option  selected={optionClass.includes('inicio') && true} className="inicio"  onClick={handleClick} > Início</Option>
+                <Option  selected={optionClass.includes('sobre') && true} className="sobre"  onClick={handleClick}> Sobre </Option>
+                <Option  selected={optionClass.includes('servicos') && true} className="servicos"  onClick={handleClick}> Serviços</Option>
+                <Option  selected={optionClass.includes('contato') && true} className="contato"  onClick={handleClick}> Contato</Option>
             </HeaderNav>
         </HeaderStyle>
     );

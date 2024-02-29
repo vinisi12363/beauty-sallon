@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type PProps = {
+    selected: boolean
+}
+ 
 
 export const HeaderStyle =  styled.header`
 
@@ -19,23 +23,27 @@ export const HeaderNav = styled.div `
     width: 40vw;
     height:auto;
     background-color:#F9F9F9;
-  
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-right:10px;
     p {
+      
+        
+    }
+ 
+    .option{
+      
+    }
+` 
+
+export const Option = styled.p<PProps>`
         font-family: 'DM Sans';
         font-size: 20px;
         font-weight:500;
-        color: black;
-    }
-    .selected {
-        border-bottom: 3px solid #f67797;
-    }
-    .option{
+        color:${props=>props.selected? '#F67797': 'black'};
+        border-bottom:${ props=>props.selected? '  3px solid #F67797': 'none'}; 
         &:hover{
             cursor: pointer;
         }
-    }
-` 
+`

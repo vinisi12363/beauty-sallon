@@ -4,6 +4,7 @@ import { Header } from "../Header/Header";
 import LeftPanel from "../ContentInfo/LeftContainer";
 import RightPanel from "../ContentInfo/RightContainer";
 import { HomeContent } from "./style";
+import About from "../AboutComponent/About";
 
 export const HomePageComponent = () =>{
 
@@ -18,8 +19,8 @@ export const HomePageComponent = () =>{
                     <RightPanel></RightPanel>
                 </div>   
                
-                <div>
-                    <Title textColor="black" text="Conteúdo" textSize="45px"></Title>
+                <div  className='infoContent'>
+                   <About></About>
                 </div>
                 <div>
                     <Title textColor="black" text="Conteúdo" textSize="45px"></Title>

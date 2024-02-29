@@ -20,6 +20,7 @@ export const HomeContent = styled.div`
     flex-direction: row;
     width: 100%;
     min-height: 50vw;
-    background-color: green;
+    background-color: #f9f9f9;
   }
+
 `;
