@@ -25,13 +25,13 @@ export const Header = ()=>{
         }
         if(target.className.includes('servicos')){
             window.scrollTo({
-                top: 1990,
+                top: 1880,
                 behavior: 'smooth'
               });
         }
         if(target.className.includes('contato')){
             window.scrollTo({
-                top: 2990,
+                top: 3000,
                 behavior: 'smooth'
               });
         }

@@ -2,7 +2,7 @@ import { LeftPainel } from "./style";
 import { LeftTextArea } from "./style";
 import { Title } from "../Title/Title";
 import { Subtitle } from "../Subtitle/Subtitle";
-import { Button } from "../Button/Button";
+import { Button } from "../Buttons/Button";
 
 export default function LeftPanel () {
     const alertMssage = () =>{

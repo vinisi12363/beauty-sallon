@@ -1,10 +1,11 @@
-import { Title } from "../Title/Title";
 import { Body } from "../BodyComponent/BodyConainer";
 import { Header } from "../Header/Header";
 import LeftPanel from "../ContentInfo/LeftContainer";
 import RightPanel from "../ContentInfo/RightContainer";
 import { HomeContent } from "./style";
 import About from "../AboutComponent/About";
+import Services from "../ServicesComponents/ServiceComponent";
+import Contact from "../Contato/Contact";
 
 export const HomePageComponent = () =>{
 
@@ -22,11 +23,12 @@ export const HomePageComponent = () =>{
                 <div  className='infoContent'>
                    <About></About>
                 </div>
-                <div>
-                    <Title textColor="black" text="Conteúdo" textSize="45px"></Title>
+                <div className="infoContentServices">
+                    <Services></Services>
+                
                 </div>
-                <div>
-                    <Title textColor="black" text="Conteúdo" textSize="45px"></Title>
+                <div  className='infoContent'>
+                    <Contact></Contact>
                 </div>
             </HomeContent>
            

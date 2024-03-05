@@ -22,5 +22,12 @@ export const HomeContent = styled.div`
     min-height: 50vw;
     background-color: #f9f9f9;
   }
+  .infoContentServices {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vw;
+    background-color: #fefefe;
+  }
 
 `;
