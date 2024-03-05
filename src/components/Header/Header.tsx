@@ -37,7 +37,7 @@ export const Header = ()=>{
         }
      
       };
-      console.log('opt', optionClass)
+      
     return (
         <HeaderStyle>
             <Logo></Logo>
