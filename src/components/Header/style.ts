@@ -16,6 +16,11 @@ export const HeaderStyle =  styled.header`
     z-index:999;
     position:fixed;
     top:0;
+    @media screen and (max-width:420px) {
+      height:10vw;
+      width:100dvh;
+      background-color:#f9f9f9;
+    }
 
 `
 
@@ -27,6 +32,7 @@ export const HeaderNav = styled.div `
     flex-direction: row;
     justify-content: space-around;
     padding-right:10px;
+
     p {
       
         
@@ -34,6 +40,10 @@ export const HeaderNav = styled.div `
  
     .option{
       
+    }
+
+    @media screen and (max-width:420px) {
+        display:none;
     }
 ` 
 

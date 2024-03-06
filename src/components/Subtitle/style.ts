@@ -6,13 +6,14 @@ type PProps = {
 
 };
 
-export const StyledP = styled.h1<PProps>`
+export const StyledP = styled.p<PProps>`
   font-family: "Roboto", sans-serif;
   font-size: ${(props) => props.textSize};
   color: ${(props) => props.textColor};
   font-weight: 400;
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-    forn-weight: 700;
+  @media (max-width: 415px) {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align:justify;
   }
 `;
